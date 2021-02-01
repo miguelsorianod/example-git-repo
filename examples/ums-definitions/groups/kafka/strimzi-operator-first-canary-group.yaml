@@ -1,0 +1,19 @@
+---
+  name: first-specific-canary-group
+  scope: namespace
+  namespace: strimzi-operator
+  type: "operator"
+  order: 1
+  components:
+  - name: strimzi-operator
+    version: 1.0.0
+    requires:
+    - name: agent-operator
+      version: 1.0.0
+  policy:
+    type: list
+    spec:
+      items:
+      - kafka-cluster-1
+      - kafka-cluster-7
+      - kafka-cluster-8

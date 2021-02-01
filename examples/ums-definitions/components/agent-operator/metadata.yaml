@@ -1,0 +1,6 @@
+---
+name: agent-operator
+type: operator
+scope: cluster
+namespace: agent-operator
+image: quay.io/app-sre/agent:1.0.0

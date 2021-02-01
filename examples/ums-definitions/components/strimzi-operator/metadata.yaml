@@ -1,0 +1,6 @@
+---
+name: strimzi-operator
+type: operator
+scope: namespace
+namespace: strimzi-operator
+image: quay.io/app-sr3/strimzi-operator:1.0.0

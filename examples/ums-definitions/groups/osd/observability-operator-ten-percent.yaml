@@ -1,0 +1,13 @@
+---
+  name: ten-percent
+  scope: cluster
+  namespace: observability-operator
+  type: "operator"
+  order: 1
+  components:
+  - name: observability-operator
+    version: 1.0.0
+  policy:
+    type: percentage
+    spec:
+      value: 10

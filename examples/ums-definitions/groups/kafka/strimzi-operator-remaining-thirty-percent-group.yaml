@@ -1,0 +1,16 @@
+---
+  name: first-specific-canary-group
+  scope: namespace
+  namespace: strimzi-operator
+  type: "operator"
+  order: 2
+  components:
+  - name: strimzi-operator
+    version: 1.0.0
+    requires:
+    - name: agent-operator
+      version: 1.0.0
+  policy:
+    type: percentage
+    spec:
+      value: 30

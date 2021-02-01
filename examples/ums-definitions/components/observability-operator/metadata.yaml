@@ -1,0 +1,6 @@
+---
+name: observability-operator
+type: operator
+scope: cluster
+namespace: monitoring
+image: quay.io/app-sre/observability:1.0.0
